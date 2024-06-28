@@ -35,7 +35,7 @@
 
     nixosModules.git-cloner = {
       config = { config, pkgs, lib, ... }: {
-        options.git-cloner = {
+        options = {
           enable = lib.mkOption {
             type = lib.types.bool;
             default = false;
